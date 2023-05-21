@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const User = styled.div `
 // display: blok;
-position: absolute;
+// position: absolute;
 width: 300px;
 overflow: hidden;
 border-radius: 15px;
@@ -14,12 +14,13 @@ background-color: #fff;
 export const Description = styled.div`
 display: blok;
 text-align: center;
-padding: 15px;
+padding: 30px;
 // position: absolute;
 // top: 50%;
 // left: 50%;
 // margin: -125px 0 0 -125px;
 background-color: #fff;
+
 
 `;
 
@@ -49,12 +50,14 @@ display: flex;
 list-style: none;
 background-color: #D3D3D3;
 margin: 0;
-padding: 5px;
+padding: 0;
+
 `
 export const StatsLi = styled.li `
 margin: 0;
 padding: 10px;
-// border-left: 1px solid #999999;
+border-left: 1px solid #999999;
+width: 100%;
 ` 
 export const Label = styled.span `
 display: flex;
