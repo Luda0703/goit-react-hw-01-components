@@ -7,8 +7,9 @@ text-align: center;
 width: 500px;
 background-color: #fff;
 top: 600px;
-margin-top: 50px;
+margin-top: 100px;
 padding-top: 10px;
+box-shadow: 0px 4px 10px 4px #9e9e9e;
 
 
 `
@@ -18,6 +19,7 @@ display: flex;
 list-style: none;
 padding: 0;
 margin: 0;
+
 `
 
 export const Item = styled.li `

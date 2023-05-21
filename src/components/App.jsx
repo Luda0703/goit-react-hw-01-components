@@ -10,7 +10,7 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '200vh',
+        height: '300vh',
         // display: 'flex',
         textAlign: 'center',
         marginLeft: 'auto',
