@@ -11,7 +11,7 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         // fontSize: 40,
-        background: '#999999'
+        background: '#C8C8C8'
       }}
     >
       <Profile

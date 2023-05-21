@@ -1,17 +1,12 @@
 import styled from '@emotion/styled';
 
 export const User = styled.div `
-display: blok;
+// display: blok;
 position: absolute;
 width: 300px;
-height: 600px,
-justify-content: center,
-align-items: center,
 overflow: hidden;
-margin-left: avto;
-margin-right: avto;
-border-radius: 10px
-box-shadow: 0px 4px 10px 4px #9e9e9e
+border-radius: 15px;
+box-shadow: 0px 4px 10px 4px #9e9e9e;
 
 background-color: #fff;
 `;
@@ -50,19 +45,16 @@ font-size: 20px;
 `
 
 export const Stats = styled.ul `
-width: 300px;
 display: flex;
 list-style: none;
-text-decoration: none;
 background-color: #D3D3D3;
 margin: 0;
-padding: 0;
+padding: 5px;
 `
 export const StatsLi = styled.li `
 margin: 0;
-padding: 0;
 padding: 10px;
-
+// border-left: 1px solid #999999;
 ` 
 export const Label = styled.span `
 display: flex;
