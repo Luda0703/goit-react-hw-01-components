@@ -34,7 +34,7 @@ export const Profile = ({
       
     />
     <UserName >{username}</UserName>
-    <TagName>{tag}</TagName>
+    <TagName>@{tag}</TagName>
     <Location>{location}</Location>
   </Description>
 
