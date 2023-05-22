@@ -7,41 +7,26 @@ import { Profile } from './profile/profile';
 import { Statistics } from './statistics/statistics';
 import { FriendList } from './friendList/friendList';
 import { TransactionHistory } from './transactionHistory/transactionHistory';
+import { Container } from './container'
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '500vh',
-        // display: 'flex',
-        textAlign: 'center',
-        marginLeft: 'auto',
-        marginRight:'auto',
-        padding: '100px',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // fontSize: 40,
-        background: '#C8C8C8'
-      }}
-    >
+    <Container>
       <Profile
       username={user.username}
       tag={user.tag}
       location={user.location}
       avatar={user.avatar}
       stats={user.stats}
-      statsFollowers={user.stats.followers}
-      statsViews={user.stats.views}
-      statsLikes={user.stats.likes}
      />
 
      <Statistics title="Upload stats" stats={data} />
-     {/* <Statistics stats={data} /> */}
+     <Statistics stats={data} />
 
-     <FriendList friends={friends} />;
+     <FriendList friends={friends} />
 
-     <TransactionHistory items={transactions} />;
-    </div>
+     <TransactionHistory items={transactions} />
+    </Container>
   );
 
 };

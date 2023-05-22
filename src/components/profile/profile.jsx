@@ -18,38 +18,38 @@ export const Profile = ({
     tag, 
     location, 
     avatar, 
-    stats, 
-    statsFollowers,
-    statsViews,
-    statsLikes,
-
+    stats: {
+    followers,
+    views,
+    likes,
+    }
     
 }) => {
     return (
-        <User>
+    <User>
   <Description>
     <UserImg
       src={avatar}
       alt={tag}
-      class="avatar"
+      
     />
     <UserName >{username}</UserName>
     <TagName>{tag}</TagName>
     <Location>{location}</Location>
   </Description>
 
-  <Stats>
+  <Stats >
     <StatsLi>
       <Label>Followers</Label>
-      <Quantity>{statsFollowers}</Quantity>
+      <Quantity>{followers}</Quantity>
     </StatsLi>
     <StatsLi>
       <Label>Views</Label>
-      <Quantity>{statsViews}</Quantity>
+      <Quantity>{views}</Quantity>
     </StatsLi>
     <StatsLi>
       <Label>Likes</Label>
-      <Quantity>{statsLikes}</Quantity>
+      <Quantity>{likes}</Quantity>
     </StatsLi>
   </Stats>
 </User>
@@ -61,8 +61,10 @@ Profile.propTypes = {
     tag: PropTypes.string.isRequired, 
     location: PropTypes.string.isRequired, 
     avatar: PropTypes.string.isRequired, 
-    statsFollowers: PropTypes.number.isRequired,
-    statsViews: PropTypes.number.isRequired,
-    statsLikes: PropTypes.number.isRequired
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired
+    } )
     
 }

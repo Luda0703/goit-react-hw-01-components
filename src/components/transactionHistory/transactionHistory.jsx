@@ -5,7 +5,7 @@ import {
     TrList, 
     TdItem,
     ThItem,
-    TbodyItems
+    TbodyItems, 
 } from './transactionHistory.styled'
 
 export const TransactionHistory = ({ items }) => {
@@ -33,9 +33,9 @@ export const TransactionHistory = ({ items }) => {
 }
 
 TransactionHistory.proTotype = {
-    transactions: PropTypes.arrayOf(
-      PropTypes.exact({
-        id: PropTypes.number.isRequired,
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
         amount: PropTypes.string.isRequired,
         currency: PropTypes.string.isRequired,

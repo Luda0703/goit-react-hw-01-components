@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 
-
 export const ItemList = styled.ul `
 margin-top: 100px;
 display: blok;
@@ -23,31 +22,14 @@ gap: 10px;
 background-color: #fff;
 `
 export const ItemIsOnline = styled.span `
+display: blok;
 width: 10px;
 height: 10px;
 border-radius: 50px;
-background-color: #009900;
+background-color: ${(props) => (props.status ? 'green' : 'red')};
 margin-right: 20px;
-// isOnlineTrue {
-//     background: #009900;
-// }
-// isOnlineFalse {
-//     background: '#990000';
-// }
 
-`
-export const isOnlineTrue = styled.span `
-background-color: #009900;
-width: 10px;
-height: 10px;
-border-radius: 50px;
-`
 
-export const isOnlineFalse = styled.span `
-background-color: #990000;
-width: 10px;
-height: 10px;
-border-radius: 50px;
 `
 
 export const ItemImg = styled.img `
