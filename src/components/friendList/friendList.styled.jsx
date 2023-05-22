@@ -6,7 +6,7 @@ export const ItemList = styled.ul `
 margin-top: 100px;
 display: blok;
 text-align: center;
-width: 400px;
+width: 300px;
 list-style: none;
 padding: 0;
 `
@@ -23,20 +23,36 @@ gap: 10px;
 background-color: #fff;
 `
 export const ItemIsOnline = styled.span `
-width: 5px;
+width: 10px;
+height: 10px;
 border-radius: 50px;
-background-color: ${props => {
-    switch(props.isOnline) {
-        case true:
-            return '#00FF00';
-        case false:
-            return '#FF0000';
-    }
-}}
+background-color: #009900;
+margin-right: 20px;
+// isOnlineTrue {
+//     background: #009900;
+// }
+// isOnlineFalse {
+//     background: '#990000';
+// }
+
+`
+export const isOnlineTrue = styled.span `
+background-color: #009900;
+width: 10px;
+height: 10px;
+border-radius: 50px;
+`
+
+export const isOnlineFalse = styled.span `
+background-color: #990000;
+width: 10px;
+height: 10px;
+border-radius: 50px;
 `
 
 export const ItemImg = styled.img `
 width: 48px;
+margin-right: 20px;
 `
 
 export const ItemName = styled.p `

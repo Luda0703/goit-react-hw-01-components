@@ -4,7 +4,10 @@ import {
     ItemList,
     ItemName, 
     ItemImg,
-    ItemIsOnline
+    ItemIsOnline,
+    isOnlineTrue,
+    isOnlineFalse
+
 } from './friendList.styled';
 
 export const FriendList = ({ friends }) => {
@@ -13,7 +16,7 @@ export const FriendList = ({ friends }) => {
         {friends.map(({ id, avatar, name, isOnline }) => (
           <Item key={id}>
             
-            <ItemIsOnline isOnline='isOnline'>{isOnline}</ItemIsOnline>
+            <ItemIsOnline >{isOnline}</ItemIsOnline>
             <ItemImg src={avatar} alt="User avatar"></ItemImg>
             <ItemName>{name}</ItemName>
           </Item>
@@ -32,3 +35,24 @@ export const FriendList = ({ friends }) => {
       })
     ).isRequired,
   };
+
+//   const setBgColor = props => {
+//     switch (props.isOnline) {
+//         case 'true':
+//             return isOnlineTrue;
+//         case 'false':
+//             return isOnlineFalse;     
+//     }
+// }
+
+// const setBgColor = (props) => {
+// if(props.isOnline) {
+//    return isOnlineTrue;
+// }
+//     return isOnlineFalse;
+// }
+
+// style={{ backgroundColor: setBgColor()}}
+
+
+
