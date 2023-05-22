@@ -3,10 +3,7 @@ import {
     Item, 
     ItemName, 
     ItemImg,
-    ItemIsOnline,
-    isOnlineTrue,
-    isOnlineFalse
-
+    ItemIsOnline
 } from './friendList.styled';
 
 export const FriendListItem = ({ avatar, name, status }) => {
